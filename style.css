@@ -1,3 +1,38 @@
-button{
-    color:green;
+button {
+    color: green;
+    background-color:;
 }
+
+h1 {
+    color: #FDD835;
+    background-color: #263238;
+    font-family: 'Bowlby One SC', cursive;
+    
+}
+
+
+p {
+    background-color: #263238;
+    font-family: 'Neucha', cursive;
+    font-size:150%;
+color:yellow;
+}
+
+.album {
+    height: 280px;
+    width: 400px;
+    margin-left: 60px;
+}
+
+body {
+    background-color: #263238;
+}
+
+
+
+
+/*
+Deep Black
+
+background-color: #212121;
+*/
