@@ -2,36 +2,157 @@
 <html>
 
 <head>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
-    
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  <style type="text/css">
+  
+  .carousel {
+    width:100%;
+  }
+    html {
+      font-size: 1rem;
+    }
+
+    body {
+      width: 100%;
+      background-color: #212121;
+      margin:0px;
+      padding:0px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin:0px;
+    }
+
+    .navbar {
+      margin-top: 20px;
+      width: 100%;
+      background: transparent;
+      height: 70px;
+      padding: 0px;
+      margin:0px;
+      bottom:0px;
+    }
+
+    .nav-links {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .nav-links li {
+      float: left;
+      width: calc(92% / 7);
+      height: 100%;
+      margin: 0 .5%;
+    }
+
+    .nav-links a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: .3rem;
+      line-height: 70px;
+      font-family: 'Poppins';
+      font-size: .85rem;
+    }
+
+    .hvr-reveal {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hvr-reveal:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0;
+      -webkit-transition-property: border-width;
+      transition-property: border-width;
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+
+    .hvr-reveal:hover:before,
+    .hvr-reveal:focus:before,
+    .hvr-reveal:active:before {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      border-width: 4px;
+      border-color: #FFAB00;
+    }
+
+    .logo {
+      max-width: 100px;
+    }
+  
+  </style>
 </head>
 
-<body>
-<nav class="navbar navbar-default">
+<body >
+    
   <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav-links">
+          <li><a href="#!" class="hvr-reveal">Home</a></li>
+          <li><a href="#!" class="hvr-reveal">Store</a></li>
+          <li><a href="#!" class="hvr-reveal">Biography</a></li>
+          <li>
+            <a href="#!" class="nav-center">
+              <a href=""><h3>Yung Court</h3></a>
+            </a>
+          </li>
+          <li><a href="#!" class="hvr-reveal">Free Music</a></li>
+          <li><a href="#!" class="hvr-reveal">Events</a></li>
+          <li><a href="#!" class="hvr-reveal">Contact US</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
-</nav
-    
-    
-   <center> <h1>Yung Court</h1></center>
-    <p>Yung Court a inspiring female aritst who inspires people today that anything is possible if you believe in yourself here dedication to her genre of music has inspire people to go for there dreams of being anything as long as they set there mind to
-        it.</p>
-    <p>Her infamous songs and albums like XGuacO Tour Lif3 and Frose are now this website for everyone to buy and enjoy her quality music as well as her wonderfuk pictures of her and her grammys she had won through her care</div>
+<div class=”row”>
+    <div class=”col-md-12”>
+    <div class="item img-responsive"><img src="IMG_0031.JPG" style="height: 800px; width:100%"></div>
+</div>
 
-        <div class="container">  
+<section style=" height:30px;width:100%;">
+  
+</section>
+
+
+  <!-- Left and right controls -->
+  <div class="container-fluid">  
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ul class="carousel-indicators">
@@ -44,21 +165,22 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img style="height:400px;width:100%" src="http://www.billboard.com/files/media/beyonce-grammys-red-carpet-billboard-1548.jpg">
+          <img style="height:400px;width:100%" src="http://im.rediff.com/movies/2009/jun/04sl8.jpg">
           <div class="carousel-caption loll">
-            <h1 style="text-shadow:10px -10px blue">Yung Court</h1>
+            <h1 style="text-shadow:10px -10px gold">Female Singer</h1>
           </div>
         </div>
 
         <div class="item">
-          <img style="height:400px;width:100%" src="">
+          <img style="height:400px;width:100%" src="https://upload.wikimedia.org/wikipedia/en/f/f3/EVOL_by_Future_cover.jpg">
         </div>
 
         <div class="item">
-          <img style="height:400px;width:100"src="http://assets.nydailynews.com/polopoly_fs/1.2397204.1444846576!/img/httpImage/image.jpg_gen/derivatives/landscape_1200/watermelondrea15n-2-web.jpg">
+          <img style="height:400px;width:100%" src="https://cdn.totalcomputersusa.com/managed/uploads/sites/23/2016/02/15894-12451-future-evol-hero-l.jpg">
         </div>
         <div class="item">
-          <img style="height:400px;width:100%" src="http://ratchetfights.org/wp-content/uploads/2017/04/1493562766_maxresdefault.jpg">
+          <img style="height:400px;width:100%" src="https://images.genius.com/961a7a2c3db0e9a7f4546de3863b5e17.1000x1000x1.jpg">
+        </div>
       </div>
 
       <!-- Left and right controls -->
@@ -70,14 +192,14 @@
         <span class="sr-only">Next</span> 
       </a>
     </div>
-
-    </div>
-        <div class="dropdown">
+  </div>
+</div>
+</div>
+<div class="dropdown">
 
             <button class="btn dropdown-toggle" data-toggle="dropdown">Albums</button>
 
             <div class="dropdown-menu">
-
                 <div data-toggle="modal" data-target="#guacModal" class="dropdown-item"><a>XGuac0 Tour Lif3</a></div>
                 <div data-toggle="modal" data-target="#frozeModal" class="dropdown-item"><a>Froze</a></div>
 
@@ -85,8 +207,8 @@
         </div>
         <div id="guacModal" class="modal fade">
             <div class="modal-dialouge">
-                <div class="modal-content">
-                    <div class="modal-body">
+                <div class="modal-content">        
+                <div class="modal-body">
                         <p>welcome to the guac life album </p>
 
                         <img class="album" src="http://wallpapercave.com/wp/EmGykBl.jpg"></img>
@@ -100,8 +222,7 @@
                             <li><a href="https://www.youtube.com/watch?v=KT7WoJP6BI">Too Much Sauce</a></li>
                             <li><a href="https://www.youtube.com/watch?v=SC4xMk98Pdc">Congratulations</a></li>
                             <li><a href="https://www.youtube.com/watch?v=eu1AHz4MV2g">Both</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=urmfyMOv8DQ">Ain't No Time</a></li>
-                           <li><a href="https://www.youtube.com/watch?v=lwk5OUII9Vc">Rolex</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=urmfyMOv8DQ">Ain't No Time</a></li>+                           <li><a href="https://www.youtube.com/watch?v=lwk5OUII9Vc">Rolex</a></li>
                            <li><a href="https://www.youtube.com/watch?v=haONsElcz1E">King of the Dead</a></li> 
                         </ol>
                     </div>
@@ -128,11 +249,40 @@
                             <li><a href="https://www.youtube.com/watch?v=EJ6QylmIYDw">In the night</a> </li>
                             <li><a href="https://www.youtube.com/watch?v=kIwU-nOueWw">SideLine Watching </a></li>
                             <li><a href="https://www.youtube.com/watch?v=Dst9gZkq1a8">Goosebumps</a></li>
-                        </ol>
+                            </ol>
                     </div>
                 </div>
             </div>
 
-    <img src="http://www.billboard.com/files/media/beyonce-grammys-red-carpet-billboard-1548.jpg">
+
+  <form action="https://formspree.io/ddestroyertv@gmail.com"
+      method="POST">
+            <div class="form-group">
+                <label>Email address:</label>
+                <input class="form-control" id="email"type="email" name="_replyto">
+            </div>
+                <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" id="number"type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>what is your Favorite song by Yung Court</label>
+                <input class="form-control" id="advice" name="message" >
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+
 
 </body>
+
+</html>
+
+
+<!--
+Pages:
+- Carousel/Home.
+- Album
+- Calendar Page
+- Fan Page
+-Contact Us
+-->
