@@ -2,21 +2,69 @@
 <html>
 
 <head>
+  <title>yung court's website</title>
   
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+   <script src="script.js"></script> 
   <style type="text/css">
   
-  .carousel {
-    width:100%;
+  .modalImg{
+    height:250px;
+    width:50%;
   }
+  div#carousel { 
+  perspective: 1200px; 
+  background: #100000; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
     html {
       font-size: 1rem;
     }
@@ -116,7 +164,440 @@
     .logo {
       max-width: 100px;
     }
-  
+   div#carousel { 
+  perspective: 1200px; 
+  background: #100000; 
+  padding-top: 10%; 
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  transform-origin: 50% 50% -500px; 
+  transition: 1s; 
+} 
+figure#spinner img { 
+  width: 40%; max-width: 425px; 
+  position: absolute; left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #fff; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+*, *:before, *:after {
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+ overflow: hidden;
+ font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+ font-weight: 100;
+ color: rgba(255, 255, 255, 1);
+ margin: 0;
+ padding: 0;
+ background: #4A4A4A;
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+#calendar {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  width: 420px;
+  margin: 0 auto;
+  height: 570px;
+  overflow: hidden;
+}
+
+.header {
+  height: 50px;
+  width: 420px;
+  background: rgba(66, 66, 66, 1);
+  text-align: center;
+  position:relative;
+  z-index: 100;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.left, .right {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  top: 50%;
+  margin-top: -7.5px;
+  cursor: pointer;
+}
+
+.left {
+  border-width: 7.5px 10px 7.5px 0;
+  border-color: transparent rgba(160, 159, 160, 1) transparent transparent;
+  left: 20px;
+}
+
+.right {
+  border-width: 7.5px 0 7.5px 10px;
+  border-color: transparent transparent transparent rgba(160, 159, 160, 1);
+  right: 20px;
+}
+
+.month {
+  /*overflow: hidden;*/
+  opacity: 0;
+}
+
+.month.new {
+  -webkit-animation: fadeIn 1s ease-out;
+  opacity: 1;
+}
+
+.month.in.next {
+  -webkit-animation: moveFromTopFadeMonth .4s ease-out;
+  -moz-animation: moveFromTopFadeMonth .4s ease-out;
+  animation: moveFromTopFadeMonth .4s ease-out;
+  opacity: 1;
+}
+
+.month.out.next {
+  -webkit-animation: moveToTopFadeMonth .4s ease-in;
+  -moz-animation: moveToTopFadeMonth .4s ease-in;
+  animation: moveToTopFadeMonth .4s ease-in;
+  opacity: 1;
+}
+
+.month.in.prev {
+  -webkit-animation: moveFromBottomFadeMonth .4s ease-out;
+  -moz-animation: moveFromBottomFadeMonth .4s ease-out;
+  animation: moveFromBottomFadeMonth .4s ease-out;
+  opacity: 1;
+}
+
+.month.out.prev {
+  -webkit-animation: moveToBottomFadeMonth .4s ease-in;
+  -moz-animation: moveToBottomFadeMonth .4s ease-in;
+  animation: moveToBottomFadeMonth .4s ease-in;
+  opacity: 1;
+}
+
+.week {
+ background: #4A4A4A;
+}
+
+.day {
+  display: inline-block;
+  width: 60px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  background: #4A4A4A;
+  position: relative;
+  z-index: 100;
+}
+
+.day.other {
+ color: rgba(255, 255, 255, .3);
+}
+
+.day.today {
+  color: rgba(156, 202, 235, 1);
+}
+
+.day-name {
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: .7px;
+}
+
+.day-number {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+
+.day .day-events {
+  list-style: none;
+  margin-top: 3px;
+  text-align: center;
+  height: 12px;
+  line-height: 6px;
+  overflow: hidden;
+}
+
+.day .day-events span {
+  vertical-align: top;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 5px;
+  height: 5px;
+  line-height: 5px;
+  margin: 0 1px;
+}
+
+.blue { background: rgba(156, 202, 235, 1); }
+.orange { background: rgba(247, 167, 0, 1); }
+.green { background: rgba(153, 198, 109, 1); }
+.yellow { background: rgba(249, 233, 0, 1); }
+
+.details {
+  position: relative;
+  width: 420px;
+  height: 75px;
+  background: rgba(164, 164, 164, 1);
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.details.in {
+  -webkit-animation: moveFromTopFade .5s ease both;
+  -moz-animation: moveFromTopFade .5s ease both;
+  animation: moveFromTopFade .5s ease both;
+}
+
+.details.out {
+  -webkit-animation: moveToTopFade .5s ease both;
+  -moz-animation: moveToTopFade .5s ease both;
+  animation: moveToTopFade .5s ease both;
+}
+
+.arrow {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -2px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(164, 164, 164, 1) transparent;
+  transition: all 0.7s ease;
+}
+
+.events {
+  height: 75px;
+  padding: 7px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.events.in {
+  -webkit-animation: fadeIn .3s ease both;
+  -moz-animation: fadeIn .3s ease both;
+  animation: fadeIn .3s ease both;
+}
+
+.events.in {
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+.details.out .events {
+  -webkit-animation: fadeOutShrink .4s ease both;
+  -moz-animation: fadeOutShink .4s ease both;
+  animation: fadeOutShink .4s ease both;
+}
+
+.events.out {
+  -webkit-animation: fadeOut .3s ease both;
+  -moz-animation: fadeOut .3s ease both;
+  animation: fadeOut .3s ease both;
+}
+
+.event {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: .5px;
+  padding: 2px 16px;
+  vertical-align: top;
+}
+
+.event.empty {
+  color: #eee;
+}
+
+.event-category {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin: 6px 0 0;
+  vertical-align: top;
+}
+
+.event span {
+  display: inline-block;
+  padding: 0 0 0 7px;
+}
+
+.legend {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: rgba(60, 60, 60, 1);
+  line-height: 30px;
+
+}
+
+.entry {
+  position: relative;
+  padding: 0 0 0 25px;
+  font-size: 13px;
+  display: inline-block;
+  line-height: 30px;
+  background: transparent;
+}
+
+.entry:after {
+  position: absolute;
+  content: '';
+  height: 5px;
+  width: 5px;
+  top: 12px;
+  left: 14px;
+}
+
+.entry.blue:after { background: rgba(156, 202, 235, 1); }
+.entry.orange:after { background: rgba(247, 167, 0, 1); }
+.entry.green:after { background: rgba(153, 198, 109, 1); }
+.entry.yellow:after { background: rgba(249, 233, 0, 1); }
+
+/* Animations are cool!  */
+@-webkit-keyframes moveFromTopFade {
+  from { opacity: .3; height:0px; margin-top:0px; -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveFromTopFade {
+  from { height:0px; margin-top:0px; -moz-transform: translateY(-100%); }
+}
+@keyframes moveFromTopFade {
+  from { height:0px; margin-top:0px; transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveToTopFade {
+  to { opacity: .3; height:0px; margin-top:0px; opacity: 0.3; -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveToTopFade {
+  to { height:0px; -moz-transform: translateY(-100%); }
+}
+@keyframes moveToTopFade {
+  to { height:0px; transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveToTopFadeMonth {
+  to { opacity: 0; -webkit-transform: translateY(-30%) scale(.95); }
+}
+@-moz-keyframes moveToTopFadeMonth {
+  to { opacity: 0; -moz-transform: translateY(-30%); }
+}
+@keyframes moveToTopFadeMonth {
+  to { opacity: 0; -moz-transform: translateY(-30%); }
+}
+
+@-webkit-keyframes moveFromTopFadeMonth {
+  from { opacity: 0; -webkit-transform: translateY(30%) scale(.95); }
+}
+@-moz-keyframes moveFromTopFadeMonth {
+  from { opacity: 0; -moz-transform: translateY(30%); }
+}
+@keyframes moveFromTopFadeMonth {
+  from { opacity: 0; -moz-transform: translateY(30%); }
+}
+
+@-webkit-keyframes moveToBottomFadeMonth {
+  to { opacity: 0; -webkit-transform: translateY(30%) scale(.95); }
+}
+@-moz-keyframes moveToBottomFadeMonth {
+  to { opacity: 0; -webkit-transform: translateY(30%); }
+}
+@keyframes moveToBottomFadeMonth {
+  to { opacity: 0; -webkit-transform: translateY(30%); }
+}
+
+@-webkit-keyframes moveFromBottomFadeMonth {
+  from { opacity: 0; -webkit-transform: translateY(-30%) scale(.95); }
+}
+@-moz-keyframes moveFromBottomFadeMonth {
+  from { opacity: 0; -webkit-transform: translateY(-30%); }
+}
+@keyframes moveFromBottomFadeMonth {
+  from { opacity: 0; -webkit-transform: translateY(-30%); }
+}
+
+@-webkit-keyframes fadeIn  {
+  from { opacity: 0; }
+}
+@-moz-keyframes fadeIn  {
+  from { opacity: 0; }
+}
+@keyframes fadeIn  {
+  from { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOut  {
+  to { opacity: 0; }
+}
+@-moz-keyframes fadeOut  {
+  to { opacity: 0; }
+}
+@keyframes fadeOut  {
+  to { opacity: 0; }
+}
+
+@-webkit-keyframes fadeOutShink  {
+  to { opacity: 0; padding: 0px; height: 0px; }
+}
+@-moz-keyframes fadeOutShink  {
+  to { opacity: 0; padding: 0px; height: 0px; }
+}
+@keyframes fadeOutShink  {
+  to { opacity: 0; padding: 0px; height: 0px; }
+}
+
+
+
+
+
+
+
+
   </style>
 </head>
 
@@ -126,7 +607,7 @@
     <nav class="navbar">
       <div class="container">
         <ul class="nav-links">
-          <li><a href="#!" class="hvr-reveal">Home</a></li>
+        
           <li><a href="#!" class="hvr-reveal">Store</a></li>
           <li><a href="#!" class="hvr-reveal">Biography</a></li>
           <li>
@@ -134,7 +615,7 @@
               <a href=""><h3>Yung Court</h3></a>
             </a>
           </li>
-          <li><a href="#!" class="hvr-reveal">Free Music</a></li>
+
           <li><a href="#!" class="hvr-reveal">Events</a></li>
           <li><a href="#!" class="hvr-reveal">Contact US</a></li>
         </ul>
@@ -145,73 +626,53 @@
     <div class=”col-md-12”>
     <div class="item img-responsive"><img src="IMG_0031.JPG" style="height: 800px; width:100%"></div>
 </div>
+<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg">
+<div id="carousel">
+  <figure id="spinner">
+    <img src="http://im.rediff.com/movies/2009/jun/04sl8.jpg" alt>
+    <img src="http://diversitywoman.com/wp-content/uploads/2012/07/Beyonce-ABC-Thanksgivi_opt-e1341274601684.jpeg" alt>
+    <img src="https://i.pinimg.com/736x/b8/73/57/b873570f48b8b3bfc03a0582e2b7254f--reading-tips-news-beyonce.jpg" alt>
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/7a/37/5b/7a375b23c85f5d862f7c3bc7ed286d68--cheap-human-hair-human-hair-wigs.jpg" alt>
+    <img src="http://www.billboard.com/files/styles/900_wide/public/media/taylor-swift-debut-album-2006-billboard-600x600.jpg" alt>
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/03/73/b8/0373b81d48f032786ab4355f322f5b37--harry-potter-pictures-harry-potter-.jpg" alt>
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/5c/ec/35/5cec35449b6b2c1bbdbfecb4dcc0531d--light-blonde-hair-pale-blonde.jpg" alt>
+    <img src="https://misslaurenrenee.files.wordpress.com/2016/05/beyonce-i-am.jpg?w=620" alt>
+  </figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
 
-<section style=" height:30px;width:100%;">
+<div class="container theme-showcase">
+  <h1>Calendar</h1>
+<div id="holder" class="row" ></div>
+</div>
+
+
+
+ 
+  <div id="calendar"></div>
   
-</section>
 
-
-  <!-- Left and right controls -->
-  <div class="container-fluid">  
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-         <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ul>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img style="height:400px;width:100%" src="http://im.rediff.com/movies/2009/jun/04sl8.jpg">
-          <div class="carousel-caption loll">
-            <h1 style="text-shadow:10px -10px gold">Female Singer</h1>
-          </div>
-        </div>
-
-        <div class="item">
-          <img style="height:400px;width:100%" src="https://upload.wikimedia.org/wikipedia/en/f/f3/EVOL_by_Future_cover.jpg">
-        </div>
-
-        <div class="item">
-          <img style="height:400px;width:100%" src="https://cdn.totalcomputersusa.com/managed/uploads/sites/23/2016/02/15894-12451-future-evol-hero-l.jpg">
-        </div>
-        <div class="item">
-          <img style="height:400px;width:100%" src="https://images.genius.com/961a7a2c3db0e9a7f4546de3863b5e17.1000x1000x1.jpg">
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span> 
-      </a>
-    </div>
-  </div>
-</div>
-</div>
 <div class="dropdown">
-  
-  <button class="btn dropdown-toggle" data-toggle="dropdown">Menu</button>
-<div class="dropdown-menu"
-  <div ><a>XGuac0 Tour Lif3</a></div>
-  <div ><a>Froze</a></div>
-</div>
-  <div id="guacModal" class="modal fade">
+    
+        <button class="btn dropdown-toggle" data-toggle="dropdown">Albums</button>
+        
+        <div class="dropdown-menu">
+    
+            <div data-toggle="modal" data-target="#guacModal" class="dropdown-item">Xguac0 Tour Lif3</div>
+            <div data-toggle="modal" data-target="#frozeModal" class="dropdown-item">Froze</div>
+            
+            
+        </div>
+    </div>
+        <div id ="guacModal" class= "modal fade">
             <div class="modal-dialouge">
-                <div class="modal-content">        
-                <div class="modal-body">
- <p>welcome to the guac life album </p>
-
-                        <img class="album" src="http://wallpapercave.com/wp/EmGykBl.jpg"></img>
-                        <p>$29.99 USD</p>
-                        <ol>
-                            <li><a href="https://www.youtube.com/watch?v=oVd_NCU7Pmg">XGuac0 Tour Lif3</a></li>
+            <div class="modal-content">
+            <div class="modal-body">
+            <p>welcome to the XGuac0  Tour Lif3 Album</p>
+            <img class="modalImg"  src="https://previews.123rf.com/images/deepreal/deepreal1108/deepreal110800007/10432958-Stack-of-Dollar-Bills-HQ-3d-Render--Stock-Photo-money-stack-cash.jpg">
+            <ol>
+            <li><a href="https://www.youtube.com/watch?v=oVd_NCU7Pmg">XGuac0 Tour Lif3</a></li>
                             <li><a href="https://www.youtube.com/watch?v=Qzy_Dbx7bwc">War Pain</a></li>
                             <li><a href="https://www.youtube.com/watch?v=uysp-0E5wD8">Waves</a></li>
                             <li><a href="https://www.youtube.com/watch?v=Ucu9fgpSvUA">Timmy Turner ft. Kanye West</a></li>
@@ -219,17 +680,37 @@
                             <li><a href="https://www.youtube.com/watch?v=KT7WoJP6BI">Too Much Sauce</a></li>
                             <li><a href="https://www.youtube.com/watch?v=SC4xMk98Pdc">Congratulations</a></li>
                             <li><a href="https://www.youtube.com/watch?v=eu1AHz4MV2g">Both</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=urmfyMOv8DQ">Ain't No Time</a></li>+                           <li><a href="https://www.youtube.com/watch?v=lwk5OUII9Vc">Rolex</a></li>
-    ˜                       <li><a href="https://www.youtube.com/watch?v=haONsElcz1E">King of the Dead</a></li> 
-                        </ol>
-                    </div>
-                </div>
+                            <li><a href="https://www.youtube.com/watch?v=urmfyMOv8DQ">Ain't No Time</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=lwk5OUII9Vc">Rolex</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=haONsElcz1E">King of the Dead</a></li> 
+            </ol>
             </div>
-        </div>
-
-</div>
-
-
+            </div>
+            </div>
+    </div>
+    <div id ="frozeModal" class= "modal fade">
+            <div class="modal-dialouge">
+            <div class="modal-content">
+            <div class="modal-body">
+            <p>welcome to the Froze album</p>
+            <img class="modalImg"  src="https://cdn.pixabay.com/photo/2017/04/19/16/39/wolf-2242831__340.jpg">
+            <ol>
+            <li><a href="https://www.youtube.com/watch?v=oVd_NCU7Pmg">XGuac0 Tour Lif3</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=Qzy_Dbx7bwc">War Pain</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=uysp-0E5wD8">Waves</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=Ucu9fgpSvUA">Timmy Turner ft. Kanye West</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=1VUa99-tJqs">T-shirt</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=KT7WoJP6BI">Too Much Sauce</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=SC4xMk98Pdc">Congratulations</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=eu1AHz4MV2g">Both</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=urmfyMOv8DQ">Ain't No Time</a></li>    
+                            <li><a href="https://www.youtube.com/watch?v=lwk5OUII9Vc">Rolex</a></li>
+                            <li><a href="https://www.youtube.com/watch?v=haONsElcz1E">King of the Dead</a></li> 
+            </ol>
+            </div>
+            </div>
+            </div>
+    </div>
   <form action="https://formspree.io/ddestroyertv@gmail.com"
       method="POST">
             <div class="form-group">
@@ -247,9 +728,9 @@
             <button type="submit" class="btn btn-default">Submit</button>
   </form>
 
-
+ 
 </body>
-
+ 
 </html>
 
 
