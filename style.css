@@ -18,19 +18,16 @@ p {
 color:yellow;
 }
 
-.album {
+#album {
     height: 280px;
     width: 400px;
     margin-left: 60px;
+background-color: gold;
+color:black;
+    
 }
 
 body {
     background-color: #263238;
 }
-
-
-
-
-
-
 
