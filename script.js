@@ -337,25 +337,25 @@ $(document).ready(function() {
 
 !function() {
   var data = [
-    { eventName: 'Lunch Meeting w/ Mark', calendar: 'Work', color: 'orange' },
-    { eventName: 'Interview - Jr. Web Developer', calendar: 'Work', color: 'orange' },
-    { eventName: 'Demo New App to the Board', calendar: 'Work', color: 'orange' },
-    { eventName: 'Dinner w/ Marketing', calendar: 'Work', color: 'orange' },
+    { eventName: 'MSG Manhattan ', calendar: 'Work', color: 'orange' },
+    { eventName: 'Barclay Center Brooklyn ', calendar: 'Work', color: 'orange' },
+    { eventName: 'Chesapeake Energy Arena at Oklahoma City ', calendar: 'Work', color: 'orange' },
+    { eventName: 'Staples Center at Los Angeles', calendar: 'Work', color: 'orange' },
 
-    { eventName: 'Game vs Portalnd', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Houston', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs Denver', calendar: 'Sports', color: 'blue' },
-    { eventName: 'Game vs San Degio', calendar: 'Sports', color: 'blue' },
+    { eventName: 'Spectrum Center CHarlotte ', calendar: 'Work', color: 'orange' },
+    { eventName: 'American Airlines Arena Miami Guaco ', calendar: 'Work', color: 'orange' },
+    { eventName: 'American Airlines Center Dallas ', calendar: 'Work', color: 'orange' },
+    { eventName: 'AT&T Center San Antonio', calendar: 'Work', color: 'orange' },
 
-    { eventName: 'School Play', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Parent/Teacher Conference', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Pick up from Soccer Practice', calendar: 'Kids', color: 'yellow' },
-    { eventName: 'Ice Cream Night', calendar: 'Kids', color: 'yellow' },
+    { eventName: 'United Center Chicago ', calendar: 'Work', color: 'orange' },
+    { eventName: 'Wells Fargo Center Philadelphia ', calendar: 'Work', color: 'orange' },
+    { eventName: 'Scottrade Center St.Louis', calendar: 'Work', color: 'orange' },
+    { eventName: 'Moda Center Portland', calendar: 'Work', color: 'orange' },
 
-    { eventName: 'Free Tamale Night', calendar: 'Other', color: 'green' },
-    { eventName: 'Bowling Team', calendar: 'Other', color: 'green' },
-    { eventName: 'Teach Kids to Code', calendar: 'Other', color: 'green' },
-    { eventName: 'Startup Weekend', calendar: 'Other', color: 'green' }
+    { eventName: 'Oklahoma State Fair Arena', calendar: 'Work', color: 'green' },
+    { eventName: 'Artist Event for kids', calendar: 'Other', color: 'green' },
+    { eventName: 'Cintas Center Cincinnati', calendar: 'Work', color: 'Orange' },
+    { eventName: 'Albany Civic Center', calendar: 'Work', color: 'orange' }
   ];
 
   
