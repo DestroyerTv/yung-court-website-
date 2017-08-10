@@ -339,7 +339,7 @@ $(document).ready(function() {
   var data = [
     { eventName: 'MSG Manhattan ', calendar: 'Work', color: 'orange' },
     { eventName: 'Barclay Center Brooklyn ', calendar: 'Work', color: 'orange' },
-    { eventName: 'Chesapeake Energy Arena at Oklahoma City ', calendar: 'Work', color: 'orange' },
+    { eventName: 'dsvsdfdsefdfses ', calendar: 'Work', color: 'orange' },
     { eventName: 'Staples Center at Los Angeles', calendar: 'Work', color: 'orange' },
 
     { eventName: 'Spectrum Center CHarlotte ', calendar: 'Work', color: 'orange' },
