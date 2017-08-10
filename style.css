@@ -1,8 +1,15 @@
 button {
     color: green;
-    background-color:;
+    /*background-color:;*/
 }
-
+.navbar-nav{
+    
+    float:none;
+}
+#b{
+    background-color:white;
+    
+}
 h1 {
     color: #FDD835;
     background-color: #263238;
@@ -34,3 +41,6 @@ body {
     width:400px;
     margin: 0 auto;
 }
+
+    
+    
